@@ -16,7 +16,11 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 
 # Features
 
-- **Generate** VIPER modules in Swift and Objective-C
-- **Generate** Generate VIPER Modules's unit tests for both Swift and Objective-C
-- **Friendly UI** ViperCode app UI is similar to Xcode.
-- **Good bye Ruby gems** no ruby at all, it's native Desktop OS X app.
+- **Create** new apps on both iTunes Connect and the Apple Developer Portal
+- **Modify** Application Services on the Apple Developer Portal
+- **Create** App Groups on the Apple Developer Portal
+- **Associate** apps with App Groups on the Apple Developer Portal
+- Support for **multiple Apple accounts**, storing your credentials securely in the Keychain
+
+# Installation
+    sudo gem install produce
