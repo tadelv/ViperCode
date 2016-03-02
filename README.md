@@ -14,3 +14,10 @@
 
 Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.com/same7mabrouk)
 
+# Features
+
+- **Create** new apps on both iTunes Connect and the Apple Developer Portal
+- **Modify** Application Services on the Apple Developer Portal
+- **Create** App Groups on the Apple Developer Portal
+- **Associate** apps with App Groups on the Apple Developer Portal
+- Support for **multiple Apple accounts**, storing your credentials securely in the Keychain
