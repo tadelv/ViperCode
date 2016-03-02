@@ -37,3 +37,10 @@ Please check "Include unit tests" option then enter the VIPER module name and te
     
 Screenshot of the ViperCode OS X app.
 <img src="./ViperCode-screenshot.png" />
+
+# Need help?
+Please submit an issue on GitHub and provide information about your setup
+
+# License
+This project is licensed under the terms of the MIT license. See the LICENSE file.
+
