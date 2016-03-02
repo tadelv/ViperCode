@@ -38,7 +38,7 @@ Screenshot of the ViperCode OS X app.
 <img src="./ViperCode-screenshot.png" />
 
 # Need help?
-Please submit an issue on GitHub, Or contact me directly at mabrouksameh@gmail.com
+Please submit an issue on GitHub, or contact me directly at mabrouksameh@gmail.com
 
 # License
 This project is licensed under the terms of the MIT license. See the LICENSE file.
