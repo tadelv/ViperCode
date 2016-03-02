@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		295AF3391C8796D900B6F02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3381C8796D900B6F02D /* AppDelegate.m */; };
+		295AF33C1C8796D900B6F02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF33B1C8796D900B6F02D /* main.m */; };
+		295AF33F1C8796D900B6F02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF33E1C8796D900B6F02D /* ViewController.m */; };
+		295AF3411C8796D900B6F02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3401C8796D900B6F02D /* Assets.xcassets */; };
+		295AF3441C8796D900B6F02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3421C8796D900B6F02D /* Main.storyboard */; };
+		295AF34F1C8796D900B6F02D /* ViperCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF34E1C8796D900B6F02D /* ViperCodeTests.m */; };
+		295AF35A1C8796D900B6F02D /* ViperCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3591C8796D900B6F02D /* ViperCodeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		295AF34B1C8796D900B6F02D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 295AF32C1C8796D900B6F02D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 295AF3331C8796D900B6F02D;
+			remoteInfo = ViperCode;
+		};
+		295AF3561C8796D900B6F02D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 295AF32C1C8796D900B6F02D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 295AF3331C8796D900B6F02D;
+			remoteInfo = ViperCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		295AF3341C8796D900B6F02D /* ViperCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		295AF3371C8796D900B6F02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		295AF3381C8796D900B6F02D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		295AF33B1C8796D900B6F02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		295AF33D1C8796D900B6F02D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		295AF33E1C8796D900B6F02D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		295AF3401C8796D900B6F02D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		295AF3431C8796D900B6F02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		295AF3451C8796D900B6F02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		295AF34A1C8796D900B6F02D /* ViperCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		295AF34E1C8796D900B6F02D /* ViperCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperCodeTests.m; sourceTree = "<group>"; };
+		295AF3501C8796D900B6F02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		295AF3551C8796D900B6F02D /* ViperCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		295AF3591C8796D900B6F02D /* ViperCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperCodeUITests.m; sourceTree = "<group>"; };
+		295AF35B1C8796D900B6F02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		295AF3311C8796D900B6F02D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3471C8796D900B6F02D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3521C8796D900B6F02D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		295AF32B1C8796D900B6F02D = {
+			isa = PBXGroup;
+			children = (
+				295AF3361C8796D900B6F02D /* ViperCode */,
+				295AF34D1C8796D900B6F02D /* ViperCodeTests */,
+				295AF3581C8796D900B6F02D /* ViperCodeUITests */,
+				295AF3351C8796D900B6F02D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		295AF3351C8796D900B6F02D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				295AF3341C8796D900B6F02D /* ViperCode.app */,
+				295AF34A1C8796D900B6F02D /* ViperCodeTests.xctest */,
+				295AF3551C8796D900B6F02D /* ViperCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		295AF3361C8796D900B6F02D /* ViperCode */ = {
+			isa = PBXGroup;
+			children = (
+				295AF3371C8796D900B6F02D /* AppDelegate.h */,
+				295AF3381C8796D900B6F02D /* AppDelegate.m */,
+				295AF33D1C8796D900B6F02D /* ViewController.h */,
+				295AF33E1C8796D900B6F02D /* ViewController.m */,
+				295AF3401C8796D900B6F02D /* Assets.xcassets */,
+				295AF3421C8796D900B6F02D /* Main.storyboard */,
+				295AF3451C8796D900B6F02D /* Info.plist */,
+				295AF33A1C8796D900B6F02D /* Supporting Files */,
+			);
+			path = ViperCode;
+			sourceTree = "<group>";
+		};
+		295AF33A1C8796D900B6F02D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				295AF33B1C8796D900B6F02D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		295AF34D1C8796D900B6F02D /* ViperCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				295AF34E1C8796D900B6F02D /* ViperCodeTests.m */,
+				295AF3501C8796D900B6F02D /* Info.plist */,
+			);
+			path = ViperCodeTests;
+			sourceTree = "<group>";
+		};
+		295AF3581C8796D900B6F02D /* ViperCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				295AF3591C8796D900B6F02D /* ViperCodeUITests.m */,
+				295AF35B1C8796D900B6F02D /* Info.plist */,
+			);
+			path = ViperCodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		295AF3331C8796D900B6F02D /* ViperCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295AF35E1C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCode" */;
+			buildPhases = (
+				295AF3301C8796D900B6F02D /* Sources */,
+				295AF3311C8796D900B6F02D /* Frameworks */,
+				295AF3321C8796D900B6F02D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViperCode;
+			productName = ViperCode;
+			productReference = 295AF3341C8796D900B6F02D /* ViperCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		295AF3491C8796D900B6F02D /* ViperCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295AF3611C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCodeTests" */;
+			buildPhases = (
+				295AF3461C8796D900B6F02D /* Sources */,
+				295AF3471C8796D900B6F02D /* Frameworks */,
+				295AF3481C8796D900B6F02D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				295AF34C1C8796D900B6F02D /* PBXTargetDependency */,
+			);
+			name = ViperCodeTests;
+			productName = ViperCodeTests;
+			productReference = 295AF34A1C8796D900B6F02D /* ViperCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		295AF3541C8796D900B6F02D /* ViperCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295AF3641C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCodeUITests" */;
+			buildPhases = (
+				295AF3511C8796D900B6F02D /* Sources */,
+				295AF3521C8796D900B6F02D /* Frameworks */,
+				295AF3531C8796D900B6F02D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				295AF3571C8796D900B6F02D /* PBXTargetDependency */,
+			);
+			name = ViperCodeUITests;
+			productName = ViperCodeUITests;
+			productReference = 295AF3551C8796D900B6F02D /* ViperCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		295AF32C1C8796D900B6F02D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = smapps;
+				TargetAttributes = {
+					295AF3331C8796D900B6F02D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					295AF3491C8796D900B6F02D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 295AF3331C8796D900B6F02D;
+					};
+					295AF3541C8796D900B6F02D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 295AF3331C8796D900B6F02D;
+					};
+				};
+			};
+			buildConfigurationList = 295AF32F1C8796D900B6F02D /* Build configuration list for PBXProject "ViperCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 295AF32B1C8796D900B6F02D;
+			productRefGroup = 295AF3351C8796D900B6F02D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				295AF3331C8796D900B6F02D /* ViperCode */,
+				295AF3491C8796D900B6F02D /* ViperCodeTests */,
+				295AF3541C8796D900B6F02D /* ViperCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		295AF3321C8796D900B6F02D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295AF3411C8796D900B6F02D /* Assets.xcassets in Resources */,
+				295AF3441C8796D900B6F02D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3481C8796D900B6F02D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3531C8796D900B6F02D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		295AF3301C8796D900B6F02D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295AF33F1C8796D900B6F02D /* ViewController.m in Sources */,
+				295AF33C1C8796D900B6F02D /* main.m in Sources */,
+				295AF3391C8796D900B6F02D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3461C8796D900B6F02D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295AF34F1C8796D900B6F02D /* ViperCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295AF3511C8796D900B6F02D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295AF35A1C8796D900B6F02D /* ViperCodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		295AF34C1C8796D900B6F02D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 295AF3331C8796D900B6F02D /* ViperCode */;
+			targetProxy = 295AF34B1C8796D900B6F02D /* PBXContainerItemProxy */;
+		};
+		295AF3571C8796D900B6F02D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 295AF3331C8796D900B6F02D /* ViperCode */;
+			targetProxy = 295AF3561C8796D900B6F02D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		295AF3421C8796D900B6F02D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				295AF3431C8796D900B6F02D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		295AF35C1C8796D900B6F02D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		295AF35D1C8796D900B6F02D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		295AF35F1C8796D900B6F02D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		295AF3601C8796D900B6F02D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		295AF3621C8796D900B6F02D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperCode.app/Contents/MacOS/ViperCode";
+			};
+			name = Debug;
+		};
+		295AF3631C8796D900B6F02D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperCode.app/Contents/MacOS/ViperCode";
+			};
+			name = Release;
+		};
+		295AF3651C8796D900B6F02D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViperCode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		295AF3661C8796D900B6F02D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViperCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViperCode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		295AF32F1C8796D900B6F02D /* Build configuration list for PBXProject "ViperCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295AF35C1C8796D900B6F02D /* Debug */,
+				295AF35D1C8796D900B6F02D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		295AF35E1C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295AF35F1C8796D900B6F02D /* Debug */,
+				295AF3601C8796D900B6F02D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		295AF3611C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295AF3621C8796D900B6F02D /* Debug */,
+				295AF3631C8796D900B6F02D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		295AF3641C8796D900B6F02D /* Build configuration list for PBXNativeTarget "ViperCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295AF3651C8796D900B6F02D /* Debug */,
+				295AF3661C8796D900B6F02D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 295AF32C1C8796D900B6F02D /* Project object */;
+}
