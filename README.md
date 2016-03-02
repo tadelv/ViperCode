@@ -23,4 +23,4 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 - Support for **multiple Apple accounts**, storing your credentials securely in the Keychain
 
 # Installation
-    sudo gem install produce
+sudo gem install produce
