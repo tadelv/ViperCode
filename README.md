@@ -35,5 +35,5 @@ Please enter the VIPER module name and module path then click generate.
 
 Please check "Include unit tests" option then enter the VIPER module name and tests file path then click generate.
     
-Screenshot from the ViperCode OS X app.
+Screenshot of the ViperCode OS X app.
 <img src="./ViperCode-screenshot.png" />
