@@ -25,3 +25,8 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 # Installation
 Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.10 or above.
 
+# Usage
+
+## Generating new VIPER module
+
+    Just enter the VIPER module name and module path then click generate.
