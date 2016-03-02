@@ -23,4 +23,5 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 - Support for **multiple Apple accounts**, storing your credentials securely in the Keychain
 
 # Installation
-sudo gem install produce
+Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.10 or above.
+
