@@ -30,3 +30,6 @@ Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.1
 ## Generating new VIPER module
 
     Just enter the VIPER module name and module path then click generate.
+    
+Screenshot shows JSONExport used for a snippet from Twitter timeline JSON and converting it to Swift-CoreData.
+<img src="./ViperCode-screenshot.png" />
