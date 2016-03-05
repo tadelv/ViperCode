@@ -21,6 +21,40 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 - **Friendly UI** ViperCode module generation UI is similar to Xcode UI.
 - **Good bye Ruby gems** No need to install Ruby gems, ViperCode is native OS X app. 
 
+# VIPER files structure
+```bash
+.objc
++-- DataManager
+|   +-- VIPERDataManager.h
+|   +-- VIPERDataManager.m
++-- Interactor
+|   +-- VIPERInteractor.h
+|   +-- VIPERInteractor.m
++-- Presenter
+|   +-- VIPERPresenter.h
+|   +-- VIPERPresenter.m
++-- ViewController
+|   +-- VIPERViewController.h
+|   +-- VIPERViewController.m
++-- WireFrame
+|   +-- VIPERWireFrame.h
+|   +-- VIPERWireFrame.m
++-- Protocols
+|   +-- VIPERProtocols.h
+.swift
++-- DataManager
+|   +-- VIPERDataManager.swift
++-- Interactor
+|   +-- VIPERInteractor.swift
++-- Presenter
+|   +-- VIPERPresenter.swift
++-- ViewController
+|   +-- VIPERViewController.swift
++-- WireFrame
+|   +-- VIPERWireFrame.swift
++-- Protocols
+|   +-- VIPERProtocols.swift
+```
 # Installation
 Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.10 or above.
 
