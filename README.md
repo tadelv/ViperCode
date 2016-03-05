@@ -41,7 +41,7 @@ Screenshot of the ViperCode OS X app.
 * Make ViperCode plugin in Xcode
 * Add more VIPER templates in Swift and Objective-C
 
-# Change Log?
+# Change Log
 * Version 0.1
 	- Added Default template
 	- Support module generation for Swift and Objective-C
