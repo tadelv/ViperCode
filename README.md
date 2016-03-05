@@ -40,7 +40,7 @@ Screenshot of the ViperCode OS X app.
 # To DO
 * Make ViperCode plugin in Xcode
 * Add more VIPER templates in Swift and Objective-C
-* 
+
 # Change Log?
 * Version 0.1
 	- Added Default template
