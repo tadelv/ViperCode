@@ -37,6 +37,15 @@ Please check "Include unit tests" option then enter the VIPER module name and te
 Screenshot of the ViperCode OS X app.
 <img src="./ViperCode-screenshot.png" />
 
+# To DO
+* Make ViperCode plugin in Xcode
+* Add more VIPER templates in Swift and Objective-C
+* 
+# Change Log?
+* Version 0.1
+	- Added Default template
+	- Support module generation for Swift and Objective-C
+	
 # Need help?
 Please submit an issue on GitHub, or contact me directly at mabrouksameh@gmail.com
 
