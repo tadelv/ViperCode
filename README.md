@@ -18,7 +18,7 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 VIPER is an application of Clean Architecture to iOS apps. The word VIPER is a backronym for View, Interactor, Presenter, Entity, and Routing. Clean Architecture divides an app’s logical structure into distinct layers of responsibility. This makes it easier to isolate dependencies (e.g. your database) and to test the interactions at the boundaries between layers:
 <img src="./VIPER.components.png" height="335" />
 
-- Know more about VIPER through this post (http://www.objc.io/issue-13/viper.html)
+- Know more about VIPER through this post http://www.objc.io/issue-13/viper.html
 
 # Features
 
