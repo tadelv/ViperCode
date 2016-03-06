@@ -64,6 +64,8 @@ Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.1
 
 Please enter the VIPER module name and module path then click generate button.
 
+And then the files structure will be automatically created. Don't forget to add this folder to your project dragging it into the XCode or Appcode inspector.
+
 ## Generating new VIPER module's unit tests
 
 Please check "Include unit tests" option then enter the VIPER module name and tests file path then click generate button.
