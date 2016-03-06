@@ -70,8 +70,8 @@ And then the files structure will be automatically created. Don't forget to add 
 
 Please check "Include unit tests" option then enter the VIPER module name and tests file path then click generate button.
 
-* Note: 
-Don't Forget to add dependencies used in the generated code (unit tests classes).
+# Note: 
+* Don't Forget to add dependencies used in the generated code (unit tests classes).
 
 * Dependencies List:
 	- OCMock: For objects mocking and dependency Injection.
