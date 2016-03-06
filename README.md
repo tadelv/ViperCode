@@ -69,7 +69,11 @@ And then the files structure will be automatically created. Don't forget to add 
 ## Generating new VIPER module's unit tests
 
 Please check "Include unit tests" option then enter the VIPER module name and tests file path then click generate button.
-    
+*Note: 
+Don't Forget to add dependencies used in the generated code (unit tests classes).
+* Dependencies List:
+	- OCMock: For objects mocking and dependency Injection.
+	- 
 Screenshot of the ViperCode OS X app.
 <img src="./ViperCode-screenshot.png" />
 
