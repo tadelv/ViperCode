@@ -41,6 +41,15 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 |   +-- VIPERWireFrame.m
 +-- Protocols
 |   +-- VIPERProtocols.h
+.objc tests
++-- Interactor
+|   +-- VIPERInteractorTests.m
++-- Presenter
+|   +-- VIPERPresenterTests.m
++-- ViewController
+|   +-- VIPERViewControllerTests.m
++-- WireFrame
+|   +-- VIPERWireFrameTests.m
 .swift
 +-- DataManager
 |   +-- VIPERDataManager.swift
@@ -54,6 +63,15 @@ Get in contact with the developer on Twitter: [@same7mabrouk](https://twitter.co
 |   +-- VIPERWireFrame.swift
 +-- Protocols
 |   +-- VIPERProtocols.swift
+.swift tests
++-- Interactor
+|   +-- VIPERInteractorTests.swift
++-- Presenter
+|   +-- VIPERPresenterTests.swift
++-- ViewController
+|   +-- VIPERViewTests.swift
++-- WireFrame
+|   +-- VIPERWireFrameTests.swift
 ```
 # Installation
 Just clone the Repo, then build it using xCode 7.2 or above on any Mac OS X 10.10 or above.
