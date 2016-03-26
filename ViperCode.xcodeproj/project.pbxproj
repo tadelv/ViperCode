@@ -11,15 +11,16 @@
 		295AF3411C8796D900B6F02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3401C8796D900B6F02D /* Assets.xcassets */; };
 		295AF34F1C8796D900B6F02D /* ViperCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF34E1C8796D900B6F02D /* ViperCodeTests.m */; };
 		295AF35A1C8796D900B6F02D /* ViperCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3591C8796D900B6F02D /* ViperCodeUITests.m */; };
-		295AF3931C8796F600B6F02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3691C8796F600B6F02D /* AppDelegate.m */; };
 		295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF36C1C8796F600B6F02D /* NSString+Substring.m */; };
-		295AF3951C8796F600B6F02D /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3701C8796F600B6F02D /* FileManager.m */; };
-		295AF3961C8796F600B6F02D /* FilesUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3721C8796F600B6F02D /* FilesUtils.m */; };
-		295AF39F1C8796F600B6F02D /* ModuleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF38D1C8796F600B6F02D /* ModuleGenerator.m */; };
-		295AF3A01C8796F600B6F02D /* TemplateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF38F1C8796F600B6F02D /* TemplateManager.m */; };
 		295AF3A11C8796F600B6F02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3921C8796F600B6F02D /* ViewController.m */; };
-		295AF3A31C87970D00B6F02D /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3A21C87970D00B6F02D /* Templates */; };
 		295AF3A51C87973F00B6F02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3A41C87973F00B6F02D /* Main.storyboard */; };
+		29B958341CA6BD6B0029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */; };
+		29B9585F1CA6BD9D0029A8CE /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9584F1CA6BD9D0029A8CE /* FileManager.m */; };
+		29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B958511CA6BD9D0029A8CE /* FilesUtils.m */; };
+		29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9585C1CA6BD9D0029A8CE /* ModuleGenerator.m */; };
+		29B958621CA6BD9D0029A8CE /* TemplateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */; };
+		29B958641CA6BDC90029A8CE /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 29B958631CA6BDC90029A8CE /* Templates */; };
+		29B958681CA6BE100029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B958671CA6BE100029A8CE /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,23 +51,25 @@
 		295AF3551C8796D900B6F02D /* ViperCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		295AF3591C8796D900B6F02D /* ViperCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperCodeUITests.m; sourceTree = "<group>"; };
 		295AF35B1C8796D900B6F02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		295AF3681C8796F600B6F02D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		295AF3691C8796F600B6F02D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		295AF36B1C8796F600B6F02D /* NSString+Substring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Substring.h"; sourceTree = "<group>"; };
 		295AF36C1C8796F600B6F02D /* NSString+Substring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Substring.m"; sourceTree = "<group>"; };
-		295AF36E1C8796F600B6F02D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		295AF36F1C8796F600B6F02D /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
-		295AF3701C8796F600B6F02D /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
-		295AF3711C8796F600B6F02D /* FilesUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesUtils.h; sourceTree = "<group>"; };
-		295AF3721C8796F600B6F02D /* FilesUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesUtils.m; sourceTree = "<group>"; };
-		295AF38C1C8796F600B6F02D /* ModuleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleGenerator.h; sourceTree = "<group>"; };
-		295AF38D1C8796F600B6F02D /* ModuleGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleGenerator.m; sourceTree = "<group>"; };
-		295AF38E1C8796F600B6F02D /* TemplateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateManager.h; sourceTree = "<group>"; };
-		295AF38F1C8796F600B6F02D /* TemplateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateManager.m; sourceTree = "<group>"; };
 		295AF3911C8796F600B6F02D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		295AF3921C8796F600B6F02D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		295AF3A21C87970D00B6F02D /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
 		295AF3A41C87973F00B6F02D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		29B957EE1CA6BD6B0029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29B9584D1CA6BD9D0029A8CE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		29B9584E1CA6BD9D0029A8CE /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		29B9584F1CA6BD9D0029A8CE /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		29B958501CA6BD9D0029A8CE /* FilesUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesUtils.h; sourceTree = "<group>"; };
+		29B958511CA6BD9D0029A8CE /* FilesUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesUtils.m; sourceTree = "<group>"; };
+		29B9585B1CA6BD9D0029A8CE /* ModuleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleGenerator.h; sourceTree = "<group>"; };
+		29B9585C1CA6BD9D0029A8CE /* ModuleGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleGenerator.m; sourceTree = "<group>"; };
+		29B9585D1CA6BD9D0029A8CE /* TemplateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateManager.h; sourceTree = "<group>"; };
+		29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateManager.m; sourceTree = "<group>"; };
+		29B958631CA6BDC90029A8CE /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
+		29B958661CA6BE100029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29B958671CA6BE100029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +120,10 @@
 		295AF3361C8796D900B6F02D /* ViperCode */ = {
 			isa = PBXGroup;
 			children = (
-				295AF3A21C87970D00B6F02D /* Templates */,
-				295AF3671C8796F600B6F02D /* AppDelegate */,
-				295AF36D1C8796F600B6F02D /* Module Generator */,
+				29B958631CA6BDC90029A8CE /* Templates */,
+				29B958651CA6BE100029A8CE /* AppDelegate */,
+				29B9584C1CA6BD9D0029A8CE /* Module Generator */,
+				29B957ED1CA6BD6B0029A8CE /* AppDelegate */,
 				295AF36A1C8796F600B6F02D /* Categories */,
 				295AF3901C8796F600B6F02D /* View Controllers */,
 				295AF3401C8796D900B6F02D /* Assets.xcassets */,
@@ -156,15 +160,6 @@
 			path = ViperCodeUITests;
 			sourceTree = "<group>";
 		};
-		295AF3671C8796F600B6F02D /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				295AF3681C8796F600B6F02D /* AppDelegate.h */,
-				295AF3691C8796F600B6F02D /* AppDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
 		295AF36A1C8796F600B6F02D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,22 +169,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		295AF36D1C8796F600B6F02D /* Module Generator */ = {
-			isa = PBXGroup;
-			children = (
-				295AF36E1C8796F600B6F02D /* Constants.h */,
-				295AF36F1C8796F600B6F02D /* FileManager.h */,
-				295AF3701C8796F600B6F02D /* FileManager.m */,
-				295AF3711C8796F600B6F02D /* FilesUtils.h */,
-				295AF3721C8796F600B6F02D /* FilesUtils.m */,
-				295AF38C1C8796F600B6F02D /* ModuleGenerator.h */,
-				295AF38D1C8796F600B6F02D /* ModuleGenerator.m */,
-				295AF38E1C8796F600B6F02D /* TemplateManager.h */,
-				295AF38F1C8796F600B6F02D /* TemplateManager.m */,
-			);
-			path = "Module Generator";
-			sourceTree = "<group>";
-		};
 		295AF3901C8796F600B6F02D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +176,40 @@
 				295AF3921C8796F600B6F02D /* ViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		29B957ED1CA6BD6B0029A8CE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				29B957EE1CA6BD6B0029A8CE /* AppDelegate.h */,
+				29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		29B9584C1CA6BD9D0029A8CE /* Module Generator */ = {
+			isa = PBXGroup;
+			children = (
+				29B9584D1CA6BD9D0029A8CE /* Constants.h */,
+				29B9584E1CA6BD9D0029A8CE /* FileManager.h */,
+				29B9584F1CA6BD9D0029A8CE /* FileManager.m */,
+				29B958501CA6BD9D0029A8CE /* FilesUtils.h */,
+				29B958511CA6BD9D0029A8CE /* FilesUtils.m */,
+				29B9585B1CA6BD9D0029A8CE /* ModuleGenerator.h */,
+				29B9585C1CA6BD9D0029A8CE /* ModuleGenerator.m */,
+				29B9585D1CA6BD9D0029A8CE /* TemplateManager.h */,
+				29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */,
+			);
+			path = "Module Generator";
+			sourceTree = "<group>";
+		};
+		29B958651CA6BE100029A8CE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				29B958661CA6BE100029A8CE /* AppDelegate.h */,
+				29B958671CA6BE100029A8CE /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,8 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B958641CA6BDC90029A8CE /* Templates in Resources */,
 				295AF3A51C87973F00B6F02D /* Main.storyboard in Resources */,
-				295AF3A31C87970D00B6F02D /* Templates in Resources */,
 				295AF3411C8796D900B6F02D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,14 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */,
+				29B958341CA6BD6B0029A8CE /* AppDelegate.m in Sources */,
+				29B958681CA6BE100029A8CE /* AppDelegate.m in Sources */,
 				295AF3A11C8796F600B6F02D /* ViewController.m in Sources */,
-				295AF3931C8796F600B6F02D /* AppDelegate.m in Sources */,
 				295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */,
-				295AF39F1C8796F600B6F02D /* ModuleGenerator.m in Sources */,
+				29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */,
+				29B9585F1CA6BD9D0029A8CE /* FileManager.m in Sources */,
 				295AF33C1C8796D900B6F02D /* main.m in Sources */,
-				295AF3A01C8796F600B6F02D /* TemplateManager.m in Sources */,
-				295AF3951C8796F600B6F02D /* FileManager.m in Sources */,
-				295AF3961C8796F600B6F02D /* FilesUtils.m in Sources */,
+				29B958621CA6BD9D0029A8CE /* TemplateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
