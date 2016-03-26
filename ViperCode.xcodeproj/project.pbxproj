@@ -14,13 +14,12 @@
 		295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF36C1C8796F600B6F02D /* NSString+Substring.m */; };
 		295AF3A11C8796F600B6F02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF3921C8796F600B6F02D /* ViewController.m */; };
 		295AF3A51C87973F00B6F02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295AF3A41C87973F00B6F02D /* Main.storyboard */; };
-		29B958341CA6BD6B0029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */; };
 		29B9585F1CA6BD9D0029A8CE /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9584F1CA6BD9D0029A8CE /* FileManager.m */; };
 		29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B958511CA6BD9D0029A8CE /* FilesUtils.m */; };
 		29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9585C1CA6BD9D0029A8CE /* ModuleGenerator.m */; };
 		29B958621CA6BD9D0029A8CE /* TemplateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */; };
 		29B958641CA6BDC90029A8CE /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 29B958631CA6BDC90029A8CE /* Templates */; };
-		29B958681CA6BE100029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B958671CA6BE100029A8CE /* AppDelegate.m */; };
+		29B9586C1CA6C0110029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9586B1CA6C0110029A8CE /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,6 @@
 		295AF3911C8796F600B6F02D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		295AF3921C8796F600B6F02D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		295AF3A41C87973F00B6F02D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		29B957EE1CA6BD6B0029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		29B9584D1CA6BD9D0029A8CE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		29B9584E1CA6BD9D0029A8CE /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		29B9584F1CA6BD9D0029A8CE /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
@@ -68,8 +65,8 @@
 		29B9585D1CA6BD9D0029A8CE /* TemplateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateManager.h; sourceTree = "<group>"; };
 		29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateManager.m; sourceTree = "<group>"; };
 		29B958631CA6BDC90029A8CE /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
-		29B958661CA6BE100029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		29B958671CA6BE100029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29B9586A1CA6C0110029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29B9586B1CA6C0110029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				29B958631CA6BDC90029A8CE /* Templates */,
-				29B958651CA6BE100029A8CE /* AppDelegate */,
+				29B958691CA6C0110029A8CE /* AppDelegate */,
 				29B9584C1CA6BD9D0029A8CE /* Module Generator */,
-				29B957ED1CA6BD6B0029A8CE /* AppDelegate */,
 				295AF36A1C8796F600B6F02D /* Categories */,
 				295AF3901C8796F600B6F02D /* View Controllers */,
 				295AF3401C8796D900B6F02D /* Assets.xcassets */,
@@ -178,15 +174,6 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		29B957ED1CA6BD6B0029A8CE /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				29B957EE1CA6BD6B0029A8CE /* AppDelegate.h */,
-				29B957EF1CA6BD6B0029A8CE /* AppDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
 		29B9584C1CA6BD9D0029A8CE /* Module Generator */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,11 +190,11 @@
 			path = "Module Generator";
 			sourceTree = "<group>";
 		};
-		29B958651CA6BE100029A8CE /* AppDelegate */ = {
+		29B958691CA6C0110029A8CE /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				29B958661CA6BE100029A8CE /* AppDelegate.h */,
-				29B958671CA6BE100029A8CE /* AppDelegate.m */,
+				29B9586A1CA6C0110029A8CE /* AppDelegate.h */,
+				29B9586B1CA6C0110029A8CE /* AppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -343,11 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */,
-				29B958341CA6BD6B0029A8CE /* AppDelegate.m in Sources */,
-				29B958681CA6BE100029A8CE /* AppDelegate.m in Sources */,
 				295AF3A11C8796F600B6F02D /* ViewController.m in Sources */,
 				295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */,
 				29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */,
+				29B9586C1CA6C0110029A8CE /* AppDelegate.m in Sources */,
 				29B9585F1CA6BD9D0029A8CE /* FileManager.m in Sources */,
 				295AF33C1C8796D900B6F02D /* main.m in Sources */,
 				29B958621CA6BD9D0029A8CE /* TemplateManager.m in Sources */,
