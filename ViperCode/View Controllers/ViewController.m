@@ -38,6 +38,12 @@
     [super setRepresentedObject:representedObject];
 }
 
+- (void)viewDidAppear {
+    [super viewDidAppear];
+    self.modulePathTexField.vpDelegate = self;
+    self.testsPathTextField.vpDelegate = self;
+}
+
 /*!
  @brief Create and display Alert sheet.  The functionality of Alert Sheets is the same like Alert Panel, but instead of being a floating window the Alert Sheet is attached to your main application window.
  @param message The alert’s informative text.
@@ -155,32 +161,43 @@
 
 #pragma mark - NSControlSubclassNotifications
 - (void)controlTextDidChange:(NSNotification *)notification {
-    
     NSTextField *textField = [notification object];
     if ([textField doubleValue] < 0 | [textField doubleValue] > 255) {
         textField.textColor = [NSColor redColor];
     }
+}
 
-    // Just show NSOpenPanel if editing Module File Path textfield
-    if (textField.tag == 400 || textField.tag == 500) {
+- (void)controlTextDidEndEditing:(NSNotification *)notification {
+    NSTextField *textField = [notification object];
+    if ([textField resignFirstResponder]) {
+        textField.textColor = [NSColor blackColor];
+    }
+}
+
+#pragma mark - VPTextFieldDelegate methods
+- (void)didBecomeFirstResponder:(NSTextField *)textField {
+    
+    // Check if TextField is of kind to chose path
+    if (textField == self.modulePathTexField || textField == self.testsPathTextField) {
+        
         NSOpenPanel* openDlg = [NSOpenPanel openPanel];
-
+        
         // Enable the selection of files in the dialog.
         [openDlg setCanChooseFiles:YES];
-
+        
         // Enable the selection of directories in the dialog.
         [openDlg setCanChooseDirectories:YES];
-
+        
         // Change "Open" dialog button to "Select"
         [openDlg setPrompt:@"Select"];
-
+        
         // Display the dialog. If the OK button was pressed process the files
         if ([openDlg runModal] == NSModalResponseOK ) {
             NSURL *result = openDlg.URL;
             if (result != nil) {
                 NSString *path = result.path;
                 textField.stringValue = path;
-
+                
                 // Check if all textfields contain stringValue or not to enable Generate button.
                 [self.generatedModuleButton setEnabled:YES];
             }
@@ -190,13 +207,6 @@
             }
             
         }
-    }
-}
-
-- (void)controlTextDidEndEditing:(NSNotification *)notification {
-    NSTextField *textField = [notification object];
-    if ([textField resignFirstResponder]) {
-        textField.textColor = [NSColor blackColor];
     }
 }
 

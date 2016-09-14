@@ -20,6 +20,7 @@
 		29B958621CA6BD9D0029A8CE /* TemplateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9585E1CA6BD9D0029A8CE /* TemplateManager.m */; };
 		29B958641CA6BDC90029A8CE /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 29B958631CA6BDC90029A8CE /* Templates */; };
 		29B9586C1CA6C0110029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9586B1CA6C0110029A8CE /* AppDelegate.m */; };
+		766F1C851D8969C10016A26E /* VPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F1C841D8969C10016A26E /* VPTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		29B958631CA6BDC90029A8CE /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
 		29B9586A1CA6C0110029A8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29B9586B1CA6C0110029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		766F1C831D8969C10016A26E /* VPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPTextField.h; path = Views/VPTextField.h; sourceTree = "<group>"; };
+		766F1C841D8969C10016A26E /* VPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPTextField.m; path = Views/VPTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 				29B958691CA6C0110029A8CE /* AppDelegate */,
 				29B9584C1CA6BD9D0029A8CE /* Module Generator */,
 				295AF36A1C8796F600B6F02D /* Categories */,
+				766F1C821D8969890016A26E /* Views */,
 				295AF3901C8796F600B6F02D /* View Controllers */,
 				295AF3401C8796D900B6F02D /* Assets.xcassets */,
 				295AF3A41C87973F00B6F02D /* Main.storyboard */,
@@ -197,6 +201,15 @@
 				29B9586B1CA6C0110029A8CE /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		766F1C821D8969890016A26E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				766F1C831D8969C10016A26E /* VPTextField.h */,
+				766F1C841D8969C10016A26E /* VPTextField.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */,
+				766F1C851D8969C10016A26E /* VPTextField.m in Sources */,
 				295AF3A11C8796F600B6F02D /* ViewController.m in Sources */,
 				295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */,
 				29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */,

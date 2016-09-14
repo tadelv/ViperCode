@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-class VIPERViewController: UIViewController, VIPERViewProtocol
-{
+class VIPERViewController: UIViewController, VIPERViewProtocol {
     var presenter: VIPERPresenterProtocol?
 }

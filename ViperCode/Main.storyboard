@@ -738,7 +738,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" tag="400" translatesAutoresizingMaskIntoConstraints="NO" id="ZIO-Qs-ggE">
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZIO-Qs-ggE" customClass="VPTextField">
                                 <rect key="frame" x="429" y="383" width="295" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="YZa-XF-Hay"/>
@@ -760,7 +760,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" tag="500" translatesAutoresizingMaskIntoConstraints="NO" id="evY-fB-a0M">
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="evY-fB-a0M" customClass="VPTextField">
                                 <rect key="frame" x="429" y="349" width="295" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cp9-C7-ZBA">
                                     <font key="font" metaFont="system"/>
