@@ -9,25 +9,24 @@
 #import <Foundation/Foundation.h>
 #import "FileManager.h"
 
-/**
- enum that contains the available templates.
- */
-enum TemplateType {
-    KDefault = 0
-};
-
 @interface TemplateManager : NSObject
+
 /*!
  @brief Returns template directory
  @return NSString the template directory name.
  */
--(NSString*)getTemplateDirectory;
+- (NSString*)getTemplateDirectory;
 
 /*!
  @brief Returns all available templates names.
  @return NSArray array that contain all available templates names.
  */
--(NSArray*)getTemplates;
+- (NSArray*)getTemplates;
 
+/*!
+ @brief Returns all available templates names.
+ @return NSArray array that contain all available templates names.
+ */
+- (NSString *)defaultTemplate;
 
 @end

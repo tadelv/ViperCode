@@ -11,35 +11,38 @@
 
 @interface ViewController : NSViewController <NSTextFieldDelegate>
 
-// ModuleGenerator instance.
+// ModuleGenerator instance
 @property(nonatomic, retain) ModuleGenerator *moduleGenerator;
 
-// Module path textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *modulePathTexField;
-
-// Company name textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
-
-// Project name textfiled.
+// Project name textfiled
 @property(nonatomic, weak) IBOutlet NSTextField *ProjectNameTextField;
-
-// Module name textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *moduleNameTextField;
-
-// Tests path textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *testsPathTextField;
-
-// Include tests check box button.
-@property(nonatomic, weak) IBOutlet NSButton *includeTestsCheckBoxButton;
-
-// Languages PopUp button.
-@property(nonatomic, weak) IBOutlet NSPopUpButton *languagesPopUpButton;
-
-// Generated module button.
-@property(nonatomic, weak) IBOutlet NSButton *generatedModuleButton;
 
 // Username textfield
 @property (weak) IBOutlet NSTextField *userNameTextField;
+
+// Module name textfiled
+@property(nonatomic, weak) IBOutlet NSTextField *moduleNameTextField;
+
+// Company name textfiled
+@property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
+
+// Module path textfiled
+@property(nonatomic, weak) IBOutlet NSTextField *modulePathTexField;
+
+// Tests path textfiled
+@property(nonatomic, weak) IBOutlet NSTextField *testsPathTextField;
+
+// Template PopUp button
+@property (weak) IBOutlet NSPopUpButton *templatePopUpButton;
+
+// Languages PopUp button
+@property(nonatomic, weak) IBOutlet NSPopUpButton *languagesPopUpButton;
+
+// Include tests checkbox button
+@property(nonatomic, weak) IBOutlet NSButton *includeTestsCheckBoxButton;
+
+// Generated module button
+@property(nonatomic, weak) IBOutlet NSButton *generatedModuleButton;
 
 - (IBAction)createModule:(id)sender;
 

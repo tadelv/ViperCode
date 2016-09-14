@@ -8,26 +8,23 @@
 
 #import "TemplateManager.h"
 
+#define kDefaultTemplate @"Default"
+
 @implementation TemplateManager
 
--(id)init{
-    self = [super init];
-    if (self) {
-    }
-    return self;
-}
-
--(NSString*)getTemplateDirectory
-{
+- (NSString*)getTemplateDirectory {
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
     return [bundlePath stringByAppendingString:@"/Contents/Resources/Templates/"];
 }
 
--(NSArray *)getTemplates
-{
+- (NSArray *)getTemplates {
     FileManager *fileManager = [[FileManager alloc] init];
     NSString *templateDir = [self getTemplateDirectory];
     return [fileManager filesAtPath:templateDir];
+}
+
+- (NSString *)defaultTemplate {
+    return kDefaultTemplate;
 }
 
 @end

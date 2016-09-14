@@ -10,8 +10,7 @@
 
 @implementation FilesUtils
 
--(BOOL)mkdir:(NSString *)path
-{
+- (BOOL)mkdir:(NSString *)path {
     NSFileManager *fileManager= [NSFileManager defaultManager];
     NSError *error = nil;
     BOOL isDirectoryCreated;
@@ -21,38 +20,32 @@
             NSLog(@"Failed to create directory \"%@\". Error: %@", @"", error);
             isDirectoryCreated = NO;
         }
-        else{
+        else {
             isDirectoryCreated = YES;
         }
     }
-    else{
+    else {
         return isDirectoryCreated = YES;
     }
+    
     return isDirectoryCreated;
 }
 
--(NSString *) readFileContents
-{
-
+- (NSString *) readFileContents {
     NSString *path = [[NSBundle mainBundle]pathForResource:@"API_KEY" ofType:@""];
 
     NSString* content = [NSString stringWithContentsOfFile:path
                                                   encoding:NSUTF8StringEncoding
                                                      error:NULL];
     return content;
-
 }
 
--(void)writeToContentsFile:(NSString*)contents
-{
-
+- (void)writeToContentsFile:(NSString*)contents {
     NSString *cont = contents;
     [cont writeToFile:@"/Users/gbahig/Desktop/ViperGenerator/ViperGenerator/Modules/Interactor.h" atomically:false encoding:NSUTF8StringEncoding error:nil];
-
 }
 
--(NSString*)readFileContentAtPath:(NSString*)path;
-{
+- (NSString*)readFileContentAtPath:(NSString*)path {
     NSError *error = nil;
     NSString* content = [NSString stringWithContentsOfFile:path
                                                   encoding:NSUTF8StringEncoding
@@ -60,18 +53,18 @@
     if (error) {
         NSLog(@"Failed to read file \"%@\". Error: %@", @"", error);
     }
+    
     return content;
 }
 
--(BOOL)writeContents:(NSString*)contents ToFileAtPath:(NSString*)path
-{
+- (BOOL)writeContents:(NSString*)contents ToFileAtPath:(NSString*)path {
     NSError *error = nil;
     [contents writeToFile:path atomically:false encoding:NSUTF8StringEncoding error:&error];
     if (error) {
         NSLog(@"Failed to write to file \"%@\". Error: %@", @"", error);
         return NO;
     }
-    else{
+    else {
         return YES;
     }
 }
