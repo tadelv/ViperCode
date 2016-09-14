@@ -11,34 +11,36 @@
 
 @interface ViewController : NSViewController <NSTextFieldDelegate>
 
-//ModuleGenerator instance.
+// ModuleGenerator instance.
 @property(nonatomic, retain) ModuleGenerator *moduleGenerator;
 
-//Module path textfiled.
+// Module path textfiled.
 @property(nonatomic, weak) IBOutlet NSTextField *modulePathTexField;
 
-//Company name textfiled.
+// Company name textfiled.
 @property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
 
-//Project name textfiled.
+// Project name textfiled.
 @property(nonatomic, weak) IBOutlet NSTextField *ProjectNameTextField;
 
-//Module name textfiled.
+// Module name textfiled.
 @property(nonatomic, weak) IBOutlet NSTextField *moduleNameTextField;
 
-//Tests path textfiled.
+// Tests path textfiled.
 @property(nonatomic, weak) IBOutlet NSTextField *testsPathTextField;
 
-//Include tests check box button.
+// Include tests check box button.
 @property(nonatomic, weak) IBOutlet NSButton *includeTestsCheckBoxButton;
 
-//Languages PopUp button.
+// Languages PopUp button.
 @property(nonatomic, weak) IBOutlet NSPopUpButton *languagesPopUpButton;
 
-//Generatet module button.
+// Generated module button.
 @property(nonatomic, weak) IBOutlet NSButton *generatedModuleButton;
 
--(IBAction)createModule:(id)sender;
+// Username textfield
+@property (weak) IBOutlet NSTextField *userNameTextField;
+
+- (IBAction)createModule:(id)sender;
 
 @end
-
