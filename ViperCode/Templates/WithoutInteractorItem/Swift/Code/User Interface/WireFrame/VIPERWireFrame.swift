@@ -1,9 +1,9 @@
 //
-//  ___FILENAME___.h
+//  ___FILENAME___.swift
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
@@ -11,6 +11,7 @@ import Foundation
 class VIPERWireFrame: VIPERWireFrameProtocol {
     
     class func presentVIPERModule(fromView view: AnyObject) {
+        
         // Generating module components
         var view: VIPERViewProtocol = VIPERViewController()
         var presenter: VIPERPresenterProtocol & VIPERInteractorOutputProtocol = VIPERPresenter()
