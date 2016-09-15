@@ -21,6 +21,9 @@
 #define kREMOVEALERT 2
 #define kMODULESUCCESSALERT 2
 
+#define kOBJECTIVE_C @"Objective-C"
+#define kSWIFT @"Swift"
+
 @implementation ViewController
 
 #pragma mark - View Controller methods
@@ -30,6 +33,7 @@
     self.view.window.title = @"ViperCode";
     [self.generatedModuleButton setEnabled:NO];
     self.ProjectNameTextField.delegate = self;
+    [self.previewHeaderCodeTextView setUserInteractionEnabled:NO];
     
     [self configAvailableTemplates];
 }
@@ -42,6 +46,26 @@
     [super viewDidAppear];
     self.modulePathTexField.vpDelegate = self;
     self.testsPathTextField.vpDelegate = self;
+}
+
+- (void)updatePreviewHeaderCode {
+    NSString *languageSuffix = @"";
+    if ([[self generateLanguage] isEqualToString:kOBJECTIVE_C]) {
+        languageSuffix = @".h";
+    }
+    else if ([[self generateLanguage] isEqualToString:kSWIFT]) {
+        languageSuffix = @".swift";
+    }
+    
+    NSString *previewText = @"//\n";
+    previewText = [previewText stringByAppendingString:[NSString stringWithFormat:@"//  %@%@\n", [self generateModuleName], languageSuffix]];
+    previewText = [previewText stringByAppendingString:[NSString stringWithFormat:@"//  %@\n", [self generateProductName]]];
+    previewText = [previewText stringByAppendingString:@"//\n"];
+    previewText = [previewText stringByAppendingString:[NSString stringWithFormat:@"//  Created by %@ on %@.\n", [self generateUserName], [self generateCurrentDate]]];
+    previewText = [previewText stringByAppendingString:[NSString stringWithFormat:@"//  Copyright (c) %@ %@. All rights reserved.\n", [self generateCurrentYear], [self generateCompanyName]]];
+    previewText = [previewText stringByAppendingString:@"//\n"];
+
+    self.previewHeaderCodeTextView.string = previewText;
 }
 
 /*!
@@ -71,7 +95,7 @@
     }];
 }
 
-- (void) configAvailableTemplates {
+- (void)configAvailableTemplates {
     TemplateManager *templateManager = [TemplateManager new];
     [self.templatePopUpButton addItemsWithTitles:[templateManager getTemplates]];
     [self.templatePopUpButton selectItemWithTitle:[templateManager defaultTemplate]];
@@ -84,11 +108,11 @@
     self.moduleGenerator = [[ModuleGenerator alloc] init];
     
     [self.moduleGenerator generateViperModuleWithName:[self generateModuleName]
-                                          projectName:self.ProjectNameTextField.stringValue
+                                          projectName:[self generateProductName]
                                                author:[self generateUserName]
-                                              company:self.companyTextField.stringValue
+                                              company:[self generateCompanyName]
                                                  path:self.modulePathTexField.stringValue
-                                             language:self.languagesPopUpButton.titleOfSelectedItem
+                                             language:[self generateLanguage]
                                         viperTemplate:[self generateTemplateName]
                                      includeUnitTests:self.includeTestsCheckBoxButton.state
                                         unitTestsPath:self.testsPathTextField.stringValue
@@ -155,12 +179,38 @@
     return [self.moduleNameTextField.stringValue stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
+- (NSString *)generateProductName {
+    return self.ProjectNameTextField.stringValue;
+}
+
 - (NSString *)generateTemplateName {
     return [self.templatePopUpButton titleOfSelectedItem];
 }
 
+- (NSString *)generateLanguage {
+    return self.languagesPopUpButton.titleOfSelectedItem;
+}
+                       
+- (NSString *)generateCompanyName {
+    return self.companyTextField.stringValue;
+}
+
+- (NSString *)generateCurrentDate {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM/dd/yyyy"];
+    return [dateFormatter stringFromDate:[NSDate new]];
+}
+
+- (NSString *)generateCurrentYear {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
+    return [formatter stringFromDate:[NSDate new]];
+}
+
 #pragma mark - NSControlSubclassNotifications
 - (void)controlTextDidChange:(NSNotification *)notification {
+    [self updatePreviewHeaderCode];
+    
     NSTextField *textField = [notification object];
     if ([textField doubleValue] < 0 | [textField doubleValue] > 255) {
         textField.textColor = [NSColor redColor];
@@ -208,6 +258,12 @@
             
         }
     }
+}
+
+
+#pragma mark - NSMenuDelegate methods
+- (void)menuDidClose:(NSMenu *)menu {
+    [self updatePreviewHeaderCode];
 }
 
 @end

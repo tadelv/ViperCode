@@ -9,8 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import "ModuleGenerator.h"
 #import "VPTextField.h"
+#import "VPTextView.h"
 
-@interface ViewController : NSViewController <NSTextFieldDelegate, VPTextFieldDelegate>
+@interface ViewController : NSViewController <NSTextFieldDelegate, VPTextFieldDelegate, NSMenuDelegate>
 
 // ModuleGenerator instance
 @property(nonatomic, retain) ModuleGenerator *moduleGenerator;
@@ -44,6 +45,9 @@
 
 // Generated module button
 @property(nonatomic, weak) IBOutlet NSButton *generatedModuleButton;
+
+// Preview code header
+@property (unsafe_unretained) IBOutlet VPTextView *previewHeaderCodeTextView;
 
 - (IBAction)createModule:(id)sender;
 

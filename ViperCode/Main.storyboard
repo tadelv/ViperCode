@@ -852,6 +852,9 @@ Gw
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="FJf-0E-Fib" id="MEU-fh-prB"/>
+                                </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jqc-XQ-3rt">
                                 <rect key="frame" x="286" y="486" width="133" height="17"/>
@@ -893,6 +896,9 @@ Gw
                                             <menuItem title="Objective-C" state="on" id="PX3-YK-Omv" userLabel="Objective C"/>
                                             <menuItem title="Swift" id="UOq-kb-9Vk" userLabel="Swift"/>
                                         </items>
+                                        <connections>
+                                            <outlet property="delegate" destination="FJf-0E-Fib" id="KMh-as-lMD"/>
+                                        </connections>
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
@@ -917,6 +923,43 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-BB-rR6">
+                                <rect key="frame" x="32" y="87" width="945" height="135"/>
+                                <clipView key="contentView" id="kwq-O4-lfN">
+                                    <rect key="frame" x="1" y="1" width="928" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="FtJ-Ci-YfD" customClass="VPTextView">
+                                            <rect key="frame" x="0.0" y="0.0" width="928" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="928" height="133"/>
+                                            <size key="maxSize" width="963" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="CVN-Ny-5V9">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="rGT-u5-MbD">
+                                    <rect key="frame" x="929" y="1" width="15" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uL9-GT-zVb">
+                                <rect key="frame" x="411" y="230" width="187" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="C4B-fj-CKS"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Example Preview:" id="Szf-Eo-A5p">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="vXO-8n-fam" firstAttribute="top" secondItem="MDn-nf-C4c" secondAttribute="bottom" constant="8" id="0DX-2L-1dU"/>
@@ -924,6 +967,7 @@ Gw
                             <constraint firstItem="TsM-vy-KoN" firstAttribute="trailing" secondItem="Z3h-sr-eE6" secondAttribute="trailing" id="1xI-Q4-VWr"/>
                             <constraint firstItem="36C-Vu-GDi" firstAttribute="trailing" secondItem="ZIO-Qs-ggE" secondAttribute="trailing" id="27N-v7-Ol3"/>
                             <constraint firstItem="mlF-NB-8vR" firstAttribute="leading" secondItem="Z3h-sr-eE6" secondAttribute="leading" id="2O0-xP-h3x"/>
+                            <constraint firstAttribute="trailing" secondItem="eZS-BB-rR6" secondAttribute="trailing" constant="55" id="3iS-FF-x9B"/>
                             <constraint firstItem="TsM-vy-KoN" firstAttribute="leading" secondItem="h4M-6Q-Wgw" secondAttribute="leading" id="3rt-7K-BYL"/>
                             <constraint firstItem="Z3h-sr-eE6" firstAttribute="top" secondItem="mlF-NB-8vR" secondAttribute="bottom" constant="8" symbolic="YES" id="47u-pu-CjO"/>
                             <constraint firstItem="5Dr-cf-o6f" firstAttribute="leading" secondItem="0ff-CB-a6n" secondAttribute="leading" id="6hK-6h-YqN"/>
@@ -933,20 +977,25 @@ Gw
                             <constraint firstItem="5Dr-cf-o6f" firstAttribute="top" secondItem="vXO-8n-fam" secondAttribute="top" id="BfG-RN-Hqw"/>
                             <constraint firstItem="5Dr-cf-o6f" firstAttribute="trailing" secondItem="mlF-NB-8vR" secondAttribute="trailing" id="BrU-wf-ZAt"/>
                             <constraint firstItem="Jqc-XQ-3rt" firstAttribute="leading" secondItem="0ff-CB-a6n" secondAttribute="leading" id="Bt0-cL-epI"/>
+                            <constraint firstItem="uL9-GT-zVb" firstAttribute="centerX" secondItem="eZS-BB-rR6" secondAttribute="centerX" id="D7x-tK-ZoY"/>
                             <constraint firstAttribute="bottom" secondItem="r7t-4D-k07" secondAttribute="bottom" constant="9" id="DCo-0x-GV1"/>
                             <constraint firstItem="sbi-9p-xdn" firstAttribute="leading" secondItem="VIH-eU-gwP" secondAttribute="leading" constant="20" id="DFU-Dd-8RX"/>
                             <constraint firstItem="evY-fB-a0M" firstAttribute="leading" secondItem="I1o-xh-7wP" secondAttribute="leading" id="Dgc-6C-Na4"/>
                             <constraint firstItem="36C-Vu-GDi" firstAttribute="leading" secondItem="ZIO-Qs-ggE" secondAttribute="leading" id="Ebk-oG-6v8"/>
+                            <constraint firstItem="eZS-BB-rR6" firstAttribute="top" secondItem="uL9-GT-zVb" secondAttribute="bottom" constant="8" symbolic="YES" id="EgI-AW-WoX"/>
                             <constraint firstItem="h4M-6Q-Wgw" firstAttribute="leading" secondItem="JZg-Ai-rnB" secondAttribute="leading" id="EsS-uF-iLd"/>
                             <constraint firstItem="MDn-nf-C4c" firstAttribute="trailing" secondItem="xwv-0F-jSv" secondAttribute="trailing" id="Ezs-bd-Ago"/>
                             <constraint firstItem="JZg-Ai-rnB" firstAttribute="centerY" secondItem="PFb-qS-6PJ" secondAttribute="centerY" id="FJq-7h-FcI"/>
                             <constraint firstItem="evY-fB-a0M" firstAttribute="top" secondItem="ZIO-Qs-ggE" secondAttribute="bottom" constant="12" id="Foa-dv-xGl"/>
                             <constraint firstItem="MDn-nf-C4c" firstAttribute="leading" secondItem="vXO-8n-fam" secondAttribute="leading" id="Fxz-FQ-JPc"/>
                             <constraint firstItem="I1o-xh-7wP" firstAttribute="top" secondItem="evY-fB-a0M" secondAttribute="bottom" constant="8" id="Hdc-SW-h0Y"/>
+                            <constraint firstItem="r7t-4D-k07" firstAttribute="top" secondItem="eZS-BB-rR6" secondAttribute="bottom" constant="57" id="Hx6-d1-FPQ"/>
                             <constraint firstItem="xwv-0F-jSv" firstAttribute="centerX" secondItem="VIH-eU-gwP" secondAttribute="centerX" constant="60" id="JCK-1A-CQc"/>
                             <constraint firstItem="mlF-NB-8vR" firstAttribute="top" secondItem="5Dr-cf-o6f" secondAttribute="bottom" constant="8" symbolic="YES" id="JCK-Le-MOr"/>
                             <constraint firstItem="Z3h-sr-eE6" firstAttribute="top" secondItem="ZIO-Qs-ggE" secondAttribute="top" id="Kcp-Rl-OqQ"/>
                             <constraint firstAttribute="trailing" secondItem="r7t-4D-k07" secondAttribute="trailing" constant="20" id="Kkc-Om-xC6"/>
+                            <constraint firstItem="eZS-BB-rR6" firstAttribute="leading" secondItem="VIH-eU-gwP" secondAttribute="leading" constant="32" id="MuY-Fc-ZJt"/>
+                            <constraint firstItem="uL9-GT-zVb" firstAttribute="top" secondItem="qSh-MO-ggg" secondAttribute="bottom" constant="8" symbolic="YES" id="N61-F0-CqI"/>
                             <constraint firstItem="TsM-vy-KoN" firstAttribute="trailing" secondItem="h4M-6Q-Wgw" secondAttribute="trailing" id="NzI-cw-8ah"/>
                             <constraint firstItem="sbi-9p-xdn" firstAttribute="top" secondItem="aYZ-y8-Xdq" secondAttribute="top" id="PRd-vT-bYa"/>
                             <constraint firstItem="sbi-9p-xdn" firstAttribute="height" secondItem="aYZ-y8-Xdq" secondAttribute="height" id="Pmx-Oc-ahg"/>
@@ -995,6 +1044,7 @@ Gw
                         <outlet property="languagesPopUpButton" destination="PFb-qS-6PJ" id="k2c-D3-cYn"/>
                         <outlet property="moduleNameTextField" destination="vXO-8n-fam" id="wE0-m8-elJ"/>
                         <outlet property="modulePathTexField" destination="ZIO-Qs-ggE" id="fQM-o7-sLY"/>
+                        <outlet property="previewHeaderCodeTextView" destination="FtJ-Ci-YfD" id="30D-QR-96g"/>
                         <outlet property="templatePopUpButton" destination="I1o-xh-7wP" id="rju-Jj-LUd"/>
                         <outlet property="testsPathTextField" destination="evY-fB-a0M" id="HBX-sI-hqw"/>
                         <outlet property="userNameTextField" destination="MDn-nf-C4c" id="PbD-m7-zdW"/>

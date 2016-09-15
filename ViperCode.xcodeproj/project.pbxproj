@@ -21,6 +21,7 @@
 		29B958641CA6BDC90029A8CE /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 29B958631CA6BDC90029A8CE /* Templates */; };
 		29B9586C1CA6C0110029A8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9586B1CA6C0110029A8CE /* AppDelegate.m */; };
 		766F1C851D8969C10016A26E /* VPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F1C841D8969C10016A26E /* VPTextField.m */; };
+		76E0EDCF1D8AAF4200F448C0 /* VPTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E0EDCE1D8AAF4200F448C0 /* VPTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		29B9586B1CA6C0110029A8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		766F1C831D8969C10016A26E /* VPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPTextField.h; path = Views/VPTextField.h; sourceTree = "<group>"; };
 		766F1C841D8969C10016A26E /* VPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPTextField.m; path = Views/VPTextField.m; sourceTree = "<group>"; };
+		76E0EDCD1D8AAF4200F448C0 /* VPTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPTextView.h; path = Views/VPTextView.h; sourceTree = "<group>"; };
+		76E0EDCE1D8AAF4200F448C0 /* VPTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPTextView.m; path = Views/VPTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 			children = (
 				766F1C831D8969C10016A26E /* VPTextField.h */,
 				766F1C841D8969C10016A26E /* VPTextField.m */,
+				76E0EDCD1D8AAF4200F448C0 /* VPTextView.h */,
+				76E0EDCE1D8AAF4200F448C0 /* VPTextView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				TargetAttributes = {
 					295AF3331C8796D900B6F02D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					295AF3491C8796D900B6F02D = {
 						CreatedOnToolsVersion = 7.2;
@@ -345,6 +351,7 @@
 				29B958601CA6BD9D0029A8CE /* FilesUtils.m in Sources */,
 				766F1C851D8969C10016A26E /* VPTextField.m in Sources */,
 				295AF3A11C8796F600B6F02D /* ViewController.m in Sources */,
+				76E0EDCF1D8AAF4200F448C0 /* VPTextView.m in Sources */,
 				295AF3941C8796F600B6F02D /* NSString+Substring.m in Sources */,
 				29B958611CA6BD9D0029A8CE /* ModuleGenerator.m in Sources */,
 				29B9586C1CA6C0110029A8CE /* AppDelegate.m in Sources */,
@@ -473,11 +480,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ViperCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -485,11 +495,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ViperCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smapps.ViperCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

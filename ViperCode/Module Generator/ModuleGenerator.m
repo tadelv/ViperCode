@@ -209,12 +209,15 @@
  @param  author The class author name.
  @param  company The App company name.
  */
-- (void)renameFileContent:(NSString*)filePath name:(NSString*)name  projectName:(NSString *)projectName author:(NSString*)author company:(NSString*)company {
+- (void)renameFileContent:(NSString*)filePath name:(NSString*)name projectName:(NSString *)projectName author:(NSString*)author company:(NSString*)company {
     // Read file content.
     NSString *fileContent = [self.filesUtilObj readFileContentAtPath:filePath];
 
+    // Rename header code comment file names
+    NSString *revisedName = [self generateFileNameForCodeHeaderWithName:name andFilePath:filePath];
+    
     // Replace content.
-    fileContent = [fileContent stringByReplacingOccurrencesOfString:kFILENAME withString:name];
+    fileContent = [fileContent stringByReplacingOccurrencesOfString:kFILENAME withString:revisedName];
     fileContent = [fileContent stringByReplacingOccurrencesOfString:kPROJECTNAME withString:projectName];
     fileContent = [fileContent stringByReplacingOccurrencesOfString:KFULLUSERNAME withString:author];
     fileContent = [fileContent stringByReplacingOccurrencesOfString:KDATE withString:[self currentDate:[NSDate date]]];
@@ -224,6 +227,20 @@
 
     // Save content with replaced string.
     [self.filesUtilObj writeContents:fileContent ToFileAtPath:filePath];
+}
+
+/*!
+ @brief Renames the filename in the header code comments.
+ @param name The Product Name
+ @param filePath The path to template file
+ @return NSString The correct filename
+ */
+- (NSString *)generateFileNameForCodeHeaderWithName:(NSString *)name andFilePath:(NSString *)filePath {
+    NSArray *slashes = [filePath componentsSeparatedByString:@"/"];
+    NSString *fileName = [[[slashes objectAtIndex:slashes.count-1] componentsSeparatedByString:@"."] objectAtIndex:0];
+    fileName = [fileName stringByReplacingOccurrencesOfString:kMODULENAME withString:name];
+    
+    return fileName;
 }
 
 /*!
