@@ -8,37 +8,47 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ModuleGenerator.h"
+#import "VPTextField.h"
+#import "VPTextView.h"
 
-@interface ViewController : NSViewController <NSTextFieldDelegate>
+@interface ViewController : NSViewController <NSTextFieldDelegate, VPTextFieldDelegate, NSMenuDelegate>
 
-//ModuleGenerator instance.
+// ModuleGenerator instance
 @property(nonatomic, retain) ModuleGenerator *moduleGenerator;
 
-//Module path textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *modulePathTexField;
-
-//Company name textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
-
-//Project name textfiled.
+// Project name textfiled
 @property(nonatomic, weak) IBOutlet NSTextField *ProjectNameTextField;
 
-//Module name textfiled.
+// Username textfield
+@property (weak) IBOutlet NSTextField *userNameTextField;
+
+// Module name textfiled
 @property(nonatomic, weak) IBOutlet NSTextField *moduleNameTextField;
 
-//Tests path textfiled.
-@property(nonatomic, weak) IBOutlet NSTextField *testsPathTextField;
+// Company name textfiled
+@property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
 
-//Include tests check box button.
-@property(nonatomic, weak) IBOutlet NSButton *includeTestsCheckBoxButton;
+// Module path textfiled
+@property(nonatomic, weak) IBOutlet VPTextField *modulePathTexField;
 
-//Languages PopUp button.
+// Tests path textfiled
+@property(nonatomic, weak) IBOutlet VPTextField *testsPathTextField;
+
+// Template PopUp button
+@property (weak) IBOutlet NSPopUpButton *templatePopUpButton;
+
+// Languages PopUp button
 @property(nonatomic, weak) IBOutlet NSPopUpButton *languagesPopUpButton;
 
-//Generatet module button.
+// Include tests checkbox button
+@property(nonatomic, weak) IBOutlet NSButton *includeTestsCheckBoxButton;
+
+// Generated module button
 @property(nonatomic, weak) IBOutlet NSButton *generatedModuleButton;
 
--(IBAction)createModule:(id)sender;
+// Preview code header
+@property (unsafe_unretained) IBOutlet VPTextView *previewHeaderCodeTextView;
+
+- (IBAction)createModule:(id)sender;
 
 @end
-

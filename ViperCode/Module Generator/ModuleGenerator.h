@@ -37,6 +37,6 @@ typedef void(^callback_block)(BOOL success, NSError *error);
  @param  callback The completion handler that gets called when generating module finishs.
  @return void
  */
--(void)generateViperModuleWithName:(NSString*)viperModuleName projectName:(NSString*)projectName author:(NSString*)author company:(NSString*)company path:(NSString*)path language:(NSString*)language viperTemplate:(enum TemplateType)viperTemplate includeUnitTests:(BOOL)includeUnitTests unitTestsPath:(NSString*)unitTestsPath replaceExistedModule:(BOOL)replaceExistedModule replaceExistedModuleTests:(BOOL)replaceExistedModuleTests callback:(callback_block)callback;
+- (void)generateViperModuleWithName:(NSString*)viperModuleName projectName:(NSString*)projectName author:(NSString*)author company:(NSString*)company path:(NSString*)path language:(NSString*)language viperTemplate:(NSString *)templateName includeUnitTests:(BOOL)includeUnitTests unitTestsPath:(NSString*)unitTestsPath replaceExistedModule:(BOOL)replaceExistedModule replaceExistedModuleTests:(BOOL)replaceExistedModuleTests callback:(callback_block)callback;
 
 @end

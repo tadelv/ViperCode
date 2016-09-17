@@ -16,6 +16,7 @@
 #define KDATE @"___DATE___"
 #define kYEAR @"___YEAR___"
 #define kORGANIZATION @"___ORGANIZATIONNAME___"
+#define kMODULENAME @"ModuleName"
 
 #define kVIPERMODULENAMETOBEREPLACED @"VIPER"
 #define kLANGUAGES @[@"Swift", @"Objective-C"]
