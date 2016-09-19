@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "VIPERWireFrame.h"
@@ -19,7 +19,7 @@
     id <VIPERAPIDataManagerInputProtocol> APIDataManager = [VIPERAPIDataManager new];
     id <VIPERLocalDataManagerInputProtocol> localDataManager = [VIPERLocalDataManager new];
     id <VIPERWireFrameProtocol> wireFrame= [VIPERWireFrame new];
-    
+
     // Connecting
     view.presenter = presenter;
     presenter.view = view;
@@ -28,7 +28,7 @@
     interactor.presenter = presenter;
     interactor.APIDataManager = APIDataManager;
     interactor.localDataManager = localDataManager;
-    
+
     //TODO: - Present interface(present, push)
 }
 

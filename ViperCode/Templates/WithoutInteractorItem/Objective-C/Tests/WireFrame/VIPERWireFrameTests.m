@@ -1,14 +1,13 @@
 //
-//  VIPERRouterTests.m
-//  ViperGenerator
+//  ___FILENAME___.h
+//  ___PROJECTNAME___
 //
-//  Created by Sameh Mabrouk on 2/27/16.
-//  Copyright © 2016 smapps. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-
 #import "VIPERWireFrame.h"
 
 @interface VIPERRouterTests : XCTestCase

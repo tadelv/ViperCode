@@ -3,20 +3,17 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-
 #import "VIPERProtocols.h"
-
 #import "VIPERInteractor.h"
 
 @interface VIPERInteractorTests : XCTestCase
 
 @property (nonatomic, strong) VIPERInteractor *interactor;
-
 @property (nonatomic, strong) id mockOutput;
 
 @end
@@ -39,7 +36,7 @@
     self.interactor = nil;
 
     self.mockOutput = nil;
-    
+
     [super tearDown];
 }
 
