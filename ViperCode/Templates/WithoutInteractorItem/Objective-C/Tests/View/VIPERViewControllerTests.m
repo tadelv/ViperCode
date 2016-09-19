@@ -1,22 +1,19 @@
 //
-//  VIPERViewControllerTests.m
-//  ViperGenerator
+//  ___FILENAME___.h
+//  ___PROJECTNAME___
 //
-//  Created by Sameh Mabrouk on 2/27/16.
-//  Copyright © 2016 smapps. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-
 #import "VIPERProtocols.h"
-
 #import "VIPERViewController.h"
 
 @interface VIPERViewControllerTests : XCTestCase
 
 @property (nonatomic, strong) VIPERViewController *controller;
-
 @property (nonatomic, strong) id mockOutput;
 
 @end
@@ -38,7 +35,7 @@
     self.controller = nil;
 
     self.mockOutput = nil;
-    
+
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }

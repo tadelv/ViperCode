@@ -1,9 +1,9 @@
 //
-//  AddPresenterTests.swift
-//  GenerambaSwift
+//  ___FILENAME___.swift
+//  ___PROJECTNAME___
 //
-//  Created by Sameh on 28/02/2016.
-//  Copyright © 2016 smapps. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import XCTest
