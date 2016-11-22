@@ -14,11 +14,11 @@
 
     // Generating module components
     id <VIPERViewProtocol> view = [[VIPERViewController alloc] init];
-    id <VIPERPresenterProtocol, VIPERInteractorOutputProtocol> presenter = [VIPERPresenter new];
-    id <VIPERInteractorInputProtocol> interactor = [VIPERInteractor new];
-    id <VIPERAPIDataManagerInputProtocol> APIDataManager = [VIPERAPIDataManager new];
-    id <VIPERLocalDataManagerInputProtocol> localDataManager = [VIPERLocalDataManager new];
-    id <VIPERWireframeProtocol> wireframe= [VIPERWireframe new];
+    id <VIPERPresenterProtocol, VIPERInteractorOutputProtocol> presenter = [[VIPERPresenter alloc] init];
+    id <VIPERInteractorInputProtocol> interactor = [[VIPERInteractor alloc] init];
+    id <VIPERAPIDataManagerInputProtocol> APIDataManager = [[VIPERAPIDataManager alloc] init];
+    id <VIPERLocalDataManagerInputProtocol> localDataManager = [[VIPERLocalDataManager alloc] init];
+    id <VIPERWireframeProtocol> wireframe= [[VIPERWireframe alloc] init];
 
     // Connecting
     view.presenter = presenter;
