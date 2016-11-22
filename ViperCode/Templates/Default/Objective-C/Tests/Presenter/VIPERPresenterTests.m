@@ -23,43 +23,43 @@
 @implementation VIPERPresenterTests
 
 - (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+	[super setUp];
+	// Put setup code here. This method is called before the invocation of each test method in the class.
 
-    self.presenter = [[VIPERPresenter alloc] init];
+	self.presenter = [[VIPERPresenter alloc] init];
 
-    self.mockInteractor = OCMProtocolMock(@protocol(VIPERInteractorInputProtocol));
-    self.mockWireframe = OCMProtocolMock(@protocol(VIPERWireframeProtocol));
-    self.mockViewController = OCMProtocolMock(@protocol(VIPERViewProtocol));
+	self.mockInteractor = OCMProtocolMock(@protocol(VIPERInteractorInputProtocol));
+	self.mockWireframe = OCMProtocolMock(@protocol(VIPERWireframeProtocol));
+	self.mockViewController = OCMProtocolMock(@protocol(VIPERViewProtocol));
 
-    self.presenter.interactor = self.mockInteractor;
-    self.presenter.router = self.mockWireframe;
-    self.presenter.view = self.mockViewController;
+	self.presenter.interactor = self.mockInteractor;
+	self.presenter.router = self.mockWireframe;
+	self.presenter.view = self.mockViewController;
 
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+	// Put teardown code here. This method is called after the invocation of each test method in the class.
 
-    self.presenter = nil;
+	self.presenter = nil;
 
-    self.mockViewController = nil;
-    self.mockWireframe = nil;
-    self.mockInteractor = nil;
+	self.mockViewController = nil;
+	self.mockWireframe = nil;
+	self.mockInteractor = nil;
 
-    [super tearDown];
+	[super tearDown];
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+	// This is an example of a functional test case.
+	// Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+	// This is an example of a performance test case.
+	[self measureBlock:^{
+		// Put the code you want to measure the time of here.
+	}];
 }
 
 @end
