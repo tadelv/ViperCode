@@ -176,7 +176,10 @@
 
 - (NSString *)generateModuleName {
     // Prevents spaces in the Module Name (filename)
-    return [self.moduleNameTextField.stringValue stringByReplacingOccurrencesOfString:@" " withString:@""];
+	NSString *prefix = self.classPrefixTextField.stringValue;
+	NSString *name = self.moduleNameTextField.stringValue;
+	NSString *fullModuleName = [NSString stringWithFormat:@"%@%@", prefix, name];
+    return [fullModuleName stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 - (NSString *)generateProductName {

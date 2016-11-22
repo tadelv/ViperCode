@@ -20,13 +20,16 @@
 @property(nonatomic, weak) IBOutlet NSTextField *ProjectNameTextField;
 
 // Username textfield
-@property (weak) IBOutlet NSTextField *userNameTextField;
+@property(nonatomic, weak) IBOutlet NSTextField *userNameTextField;
 
 // Module name textfiled
 @property(nonatomic, weak) IBOutlet NSTextField *moduleNameTextField;
 
 // Company name textfiled
 @property(nonatomic, weak) IBOutlet NSTextField *companyTextField;
+
+// Class prefix text field
+@property(nonatomic, weak) IBOutlet NSTextField *classPrefixTextField;
 
 // Module path textfiled
 @property(nonatomic, weak) IBOutlet VPTextField *modulePathTexField;
@@ -35,7 +38,7 @@
 @property(nonatomic, weak) IBOutlet VPTextField *testsPathTextField;
 
 // Template PopUp button
-@property (weak) IBOutlet NSPopUpButton *templatePopUpButton;
+@property(nonatomic, weak) IBOutlet NSPopUpButton *templatePopUpButton;
 
 // Languages PopUp button
 @property(nonatomic, weak) IBOutlet NSPopUpButton *languagesPopUpButton;
