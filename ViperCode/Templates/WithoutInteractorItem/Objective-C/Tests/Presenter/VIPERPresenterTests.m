@@ -29,7 +29,7 @@
     self.presenter = [[VIPERPresenter alloc] init];
 
     self.mockInteractor = OCMProtocolMock(@protocol(VIPERInteractorInputProtocol));
-    self.mockWireframe = OCMProtocolMock(@protocol(VIPERWireFrameProtocol));
+    self.mockWireframe = OCMProtocolMock(@protocol(VIPERWireframeProtocol));
     self.mockViewController = OCMProtocolMock(@protocol(VIPERViewProtocol));
 
     self.presenter.interactor = self.mockInteractor;

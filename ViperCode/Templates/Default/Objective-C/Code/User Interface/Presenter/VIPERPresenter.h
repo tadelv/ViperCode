@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "VIPERProtocols.h"
 
-@class VIPERWireFrame;
+@class VIPERWireframe;
 
 @interface VIPERPresenter : NSObject <VIPERPresenterProtocol, VIPERInteractorOutputProtocol>
 
 @property (nonatomic, weak) id <VIPERViewProtocol> view;
 @property (nonatomic, strong) id <VIPERInteractorInputProtocol> interactor;
-@property (nonatomic, strong) id <VIPERWireFrameProtocol> wireFrame;
+@property (nonatomic, strong) id <VIPERWireframeProtocol> wireframe;
 
 @end

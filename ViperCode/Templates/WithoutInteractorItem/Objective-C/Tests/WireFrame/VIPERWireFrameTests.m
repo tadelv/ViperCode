@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-#import "VIPERWireFrame.h"
+#import "VIPERWireframe.h"
 
 @interface VIPERRouterTests : XCTestCase
 
-@property (nonatomic, strong) VIPERWireFrame *wireFrame;
+@property (nonatomic, strong) VIPERWireframe *wireframe;
 
 @end
 
@@ -22,12 +22,12 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 
-    self.wireFrame = [[VIPERWireFrame alloc] init];
+    self.wireframe = [[VIPERWireframe alloc] init];
 
 }
 
 - (void)tearDown {
-    self.wireFrame = nil;
+    self.wireframe = nil;
 
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];

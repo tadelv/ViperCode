@@ -16,6 +16,6 @@
 #import "VIPERWireframe.h"
 #import <UIKit/UIKit.h>
 
-@interface VIPERWireFrame : NSObject <VIPERWireFrameProtocol>
+@interface VIPERWireframe : NSObject <VIPERWireframeProtocol>
 
 @end

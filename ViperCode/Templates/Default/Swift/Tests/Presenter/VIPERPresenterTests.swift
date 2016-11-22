@@ -24,7 +24,7 @@ class AddPresenterTest: XCTestCase {
 
     }
 
-    class MockWireframe: VIPERWireFrameProtocol {
+    class MockWireframe: VIPERWireframeProtocol {
 
     }
 

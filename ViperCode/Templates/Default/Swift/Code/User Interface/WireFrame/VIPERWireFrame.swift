@@ -8,7 +8,7 @@
 
 import Foundation
 
-class VIPERWireFrame: VIPERWireFrameProtocol {
+class VIPERWireframe: VIPERWireframeProtocol {
 
     class func presentVIPERModule(fromView view: AnyObject) {
 
@@ -18,12 +18,12 @@ class VIPERWireFrame: VIPERWireFrameProtocol {
         var interactor: VIPERInteractorInputProtocol = VIPERInteractor()
         var APIDataManager: VIPERAPIDataManagerInputProtocol = VIPERAPIDataManager()
         var localDataManager: VIPERLocalDataManagerInputProtocol = VIPERLocalDataManager()
-        var wireFrame: VIPERWireFrameProtocol = VIPERWireFrame()
+        var wireframe: VIPERWireframeProtocol = VIPERWireframe()
 
         // Connecting
         view.presenter = presenter
         presenter.view = view
-        presenter.wireFrame = wireFrame
+        presenter.wireframe = wireframe
         presenter.interactor = interactor
         interactor.presenter = presenter
         interactor.APIDataManager = APIDataManager

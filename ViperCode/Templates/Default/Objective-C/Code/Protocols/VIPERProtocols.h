@@ -16,7 +16,7 @@
 @protocol VIPERLocalDataManagerInputProtocol;
 @protocol VIPERAPIDataManagerInputProtocol;
 
-@class VIPERWireFrame;
+@class VIPERWireframe;
 
 // Defines the public interface that something else can use to drive the user interface
 @protocol VIPERViewProtocol
@@ -27,7 +27,7 @@
  */
 @end
 
-@protocol VIPERWireFrameProtocol
+@protocol VIPERWireframeProtocol
 @required
 + (void)presentVIPERModuleFrom:(id)fromView;
 /**
@@ -39,7 +39,7 @@
 @required
 @property (nonatomic, weak) id <VIPERViewProtocol> view;
 @property (nonatomic, strong) id <VIPERInteractorInputProtocol> interactor;
-@property (nonatomic, strong) id <VIPERWireFrameProtocol> wireFrame;
+@property (nonatomic, strong) id <VIPERWireframeProtocol> wireframe;
 /**
  * Add here your methods for communication VIEWCONTROLLER -> PRESENTER
  */
