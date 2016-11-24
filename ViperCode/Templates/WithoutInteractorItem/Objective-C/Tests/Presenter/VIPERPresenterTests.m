@@ -30,10 +30,10 @@
 
 	self.mockInteractor = OCMProtocolMock(@protocol(VIPERInteractorInputProtocol));
 	self.mockWireframe = OCMProtocolMock(@protocol(VIPERWireframeProtocol));
-	self.mockViewController = OCMProtocolMock(@protocol(VIPERViewProtocol));
+	self.mockView = OCMProtocolMock(@protocol(VIPERViewProtocol));
 
 	self.presenter.interactor = self.mockInteractor;
-	self.presenter.router = self.mockWireframe;
+	self.presenter.wireframe = self.mockWireframe;
 	self.presenter.view = self.mockViewController;
 
 }
@@ -43,7 +43,7 @@
 
 	self.presenter = nil;
 
-	self.mockViewController = nil;
+	self.mockView = nil;
 	self.mockWireframe = nil;
 	self.mockInteractor = nil;
 

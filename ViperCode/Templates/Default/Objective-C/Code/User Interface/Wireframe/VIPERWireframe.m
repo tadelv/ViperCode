@@ -10,7 +10,7 @@
 
 @implementation VIPERWireframe
 
-+ (void)presentVIPERModuleFrom:(UIViewController *)fromViewController {
++ (void)presentVIPERModuleFrom:(id)fromView {
 	
 	// Generating module components
 	id <VIPERViewProtocol> view = [[VIPERViewController alloc] init];
